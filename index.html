@@ -5,26 +5,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Who's The Footballer</title>
-    <script defer >"main.js"</script>
+    <script defer src="main.js"></script>
 </head>
+
 <body>
+   <div class="container">
     <h1>Guess Who?</h1> 
-<div class="container">
-    <div class = playerIMG>
-        <!-- <img src="giphy.gif" width="50%"> -->
+
+    <div><span class="scoreNum">Score: 0/10</span></div>
+
+    <div><span class="questNum">Question: 0/10</span></div>
+
+
+    <!-- <div class = playerIMG>
+        <img src="ronaldo.gif" width="70%">
     
-    
-</div>
-<div class=" bottomBox">Question</div>
+</div> -->
+
+<div id="questionBox">Question</div>
+<ul >
+    <li type="A" class="choices"></li>
+    <li type="A" class="choices"></li>
+    <li type="A" class="choices"></li>
+    <li type="A" class="choices"></li>
+</ul>
+
+
+
 <div class="btnChoice">
-    <button class="btn"> Choice1</button>
-    <button class="btn"> Choice2</button>
-    <button class="btn"> Choice3</button>
-    <button class="btn"> Choice4</button>
+    <button id="A" class="btn"> A</button>
+    <button id="B" class="btn"> B</button>
+    <button id="C" class="btn"> C</button>
+    <button id="D" class="btn"> D</button>
+</div>
+<div class="submitAns">
+    <button type="button" id="submit"> Submit</button>
+</div>
+   </div>
+  
 </div>
 
-</div>
 
+</div>
 
 </body>
 </html>

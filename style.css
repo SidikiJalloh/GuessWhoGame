@@ -6,30 +6,35 @@
 }
 
 body{
-    margin: 0;
+    display:flex;
+    justify-content: center;
+    margin: 300px;
     padding: 0;
     background: linear-gradient(to right, #C06C84, #6C5B7B, #355C7D);
+    
 }
 
 .container{
-    width: 900px;
+    width: 1000px;
     max-width: 90%;
     padding: 20px;
     background-color: rgb(255, 255, 255);
     box-shadow: 0 0 10px 2px;
+    
+    
 }
 
 h1{
     margin-top: 0;
     text-align: center;
-    color: white;
-
-   
 }
-.bottomBox{
-    width: 50px;
-    height: 50px;
-    text-align: center;
+
+#questionBox{
+    width: 500px;
+    height: 30px;
+    font-size: 20px;
+    margin: 20px;
+    
     
 }
 
@@ -37,8 +42,9 @@ h1{
     display: grid;
     grid-template-columns: repeat(2,auto);
     gap: 5px;
-    margin: 20px ;
+    margin: 10px;
 }
+
 .btn{
     background: #274046;
     border-radius: 20px;
@@ -49,9 +55,38 @@ h1{
     
 }
 .btn:hover{
-    border-color: rgb(229, 255, 0);
+    border-color: rgb(179, 0, 255);
 }
 
-/* .playerIMG{
 
-} */
+.scoreNum{
+font-weight: bold;
+
+}
+
+.questNum{
+    font-weight: bold;
+}
+
+.correct{
+    background-color: green;
+}
+
+.incorrect{
+    background-color: red;
+}
+
+#submit{
+    background: #274046;
+    border-radius: 20px;
+    padding: 5px 10px;
+    color: whitesmoke;
+    outline: none;
+}
+
+.submitAns{
+    text-align: center;
+}
+#submit:hover{
+    border-color: rgb(0, 255, 26);
+}
